@@ -1,0 +1,21 @@
+quest12:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: localhost 5
+      port: 3300  # optional
+      database: schema # optional, should be same as schema
+      schema: schema
+      username: root
+      password: wowey
+      driver: MySQL ODBC 8.0 ANSI Driver
+    prod:
+      type: mysql
+      server: server/host
+      port: 3300  # optional
+      database: schema # optional, should be same as schema
+      schema: schema
+      username: username
+      password: password
+      driver: MySQL ODBC 8.0 ANSI Driver
